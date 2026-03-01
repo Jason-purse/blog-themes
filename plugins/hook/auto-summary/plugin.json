@@ -1,0 +1,30 @@
+{
+  "id": "auto-summary",
+  "name": "AI 摘要",
+  "version": "1.0.0",
+  "icon": "🤖",
+  "description": "使用 AI 自动生成文章摘要",
+  "longDescription": "在文章渲染时自动生成 AI 摘要，提升 SEO 和用户体验。支持自定义摘要长度。",
+  "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+  "category": "hook",
+  "tags": ["ai", "summary", "seo", "hook"],
+  "verified": false,
+  "source": "plugins/hook/auto-summary",
+  "formats": {
+    "hook": {
+      "entry": "hook.js",
+      "hooks": ["transform"]
+    }
+  },
+  "slots": [],
+  "allowedRoutes": ["/blog/*"],
+  "dependencies": { "required": [], "recommended": [] },
+  "config": {
+    "schema": {
+      "maxLength": { "type": "number", "label": "摘要最大长度", "default": 160 },
+      "model": { "type": "text", "label": "AI 模型", "default": "abab6.5s-chat" }
+    }
+  },
+  "permissions": { "publicRead": true, "publicWrite": false },
+  "themeCompatibility": { "universal": true }
+}

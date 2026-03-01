@@ -831,6 +831,43 @@
       "themeCompatibility": {
         "universal": true
       }
+    },
+    {
+      "id": "auto-summary",
+      "name": "AI 摘要",
+      "version": "1.0.0",
+      "icon": "🤖",
+      "description": "使用 AI 自动生成文章摘要",
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "category": "hook",
+      "tags": [
+        "ai",
+        "summary",
+        "seo"
+      ],
+      "verified": false,
+      "source": "plugins/hook/auto-summary",
+      "formats": {
+        "hook": {
+          "entry": "hook.js",
+          "hooks": [
+            "transform"
+          ]
+        }
+      },
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "themeCompatibility": {
+        "universal": true
+      }
     }
   ],
   "bundles": [
