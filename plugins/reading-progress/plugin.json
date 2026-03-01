@@ -22,7 +22,7 @@
   },
 
   "checksums": {
-    "css/index.css":         "sha256:pending",
-    "webcomponent/index.js": "sha256:pending"
+    "css/index.css":         "sha256:f6c9c4e83ddb1f32a3cda31e05390fc649ed13b4a252e09255c9c0814b25313d",
+    "webcomponent/index.js": "sha256:6c9b319da5f8b9f85fb7eb70220e82667e6edf20dc8ed0d60ff38507e079f8df"
   }
 }

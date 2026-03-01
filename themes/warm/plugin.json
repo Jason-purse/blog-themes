@@ -1,0 +1,10 @@
+{
+  "id": "warm",
+  "name": "uwarm",
+  "version": "1.0.0",
+  "type": "theme",
+  "formats": {
+    "css": { "entry": "index.css" }
+  },
+  "checksums": {}
+}
