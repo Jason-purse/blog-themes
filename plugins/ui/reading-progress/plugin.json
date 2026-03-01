@@ -2,6 +2,13 @@
   "id": "reading-progress",
   "name": "阅读进度条",
   "version": "1.1.0",
+  "icon": "📊",
+  "description": "实时显示文章阅读进度的进度条，固定在页面顶部。支持自定义颜色、高度和位置。",
+  "longDescription": "实时显示文章阅读进度的进度条，固定在页面顶部。支持自定义颜色、高度和位置。",
+  "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+  "category": "ui",
+  "tags": ["progress", "scroll", "ux"],
+  "verified": true,
   "type": "plugin",
 
   "formats": {
@@ -50,5 +57,6 @@
         "cssVar": "--rp-z-index"
       }
     }
-  }
+  },
+  "revalidation": { "mode": "debounced", "debounceSeconds": 120 }
 }

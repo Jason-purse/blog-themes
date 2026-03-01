@@ -1,0 +1,18 @@
+{
+  "id": "theme-tech",
+  "name": "Tech",
+  "version": "1.0.0",
+  "description": "技术文档风 — 代码优先，清晰的信息层次",
+  "longDescription": "为技术博客设计的深色主题，代码优先，清晰的信息层次，适合文档和教程类内容。",
+  "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+  "icon": "💻",
+  "category": "theme",
+  "tags": ["dark", "monospace", "tech", "code"],
+  "verified": true,
+  "formats": { "css": { "entry": "css/index.css" } },
+  "config": { "schema": {
+    "accentColor": { "type": "color", "label": "强调色", "default": "#6366f1", "cssVar": "--theme-accent" },
+    "codeFont": { "type": "select", "label": "代码字体", "options": [{"value":"'JetBrains Mono',monospace","label":"JetBrains Mono"},{"value":"'Fira Code',monospace","label":"Fira Code"},{"value":"monospace","label":"系统等宽"}], "default": "monospace", "cssVar": "--theme-code-font" }
+  }},
+  "revalidation": { "mode": "immediate", "debounceSeconds": 0 }
+}

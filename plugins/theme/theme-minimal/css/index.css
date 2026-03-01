@@ -1,0 +1,11 @@
+:root { --theme-font-family: system-ui; --theme-line-height: 1.7; }
+body { background: #fff; color: #111; font-family: var(--theme-font-family); line-height: var(--theme-line-height); font-size: 16px; }
+h1,h2,h3 { font-weight: 600; color: #000; letter-spacing: -0.02em; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 0.4em; }
+h3 { font-size: 1.1em; }
+a { color: #0070f3; }
+a:hover { text-decoration: underline; }
+blockquote { border-left: 3px solid #ddd; padding: 0 1em; color: #666; margin: 1.5em 0; }
+code { background: #f5f5f5; padding: 0.1em 0.3em; border-radius: 3px; font-size: 0.875em; }
+pre { background: #f5f5f5; padding: 1.2em; border-radius: 6px; overflow-x: auto; }

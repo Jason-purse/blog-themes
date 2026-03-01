@@ -1,0 +1,18 @@
+{
+  "id": "theme-warm",
+  "name": "Warm",
+  "version": "1.0.0",
+  "description": "温暖日记风 — 柔和的暖色调，适合生活记录",
+  "longDescription": "柔和的暖色调主题，营造温馨舒适的阅读氛围。适合生活记录、日记和随笔类内容。",
+  "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+  "icon": "🌸",
+  "category": "theme",
+  "tags": ["warm", "cozy", "diary", "typography"],
+  "verified": true,
+  "formats": { "css": { "entry": "css/index.css" } },
+  "config": { "schema": {
+    "primaryColor": { "type": "color", "label": "主色调", "default": "#e07b5a", "cssVar": "--theme-primary" },
+    "bgColor": { "type": "color", "label": "背景色", "default": "#fff9f5", "cssVar": "--theme-bg" }
+  }},
+  "revalidation": { "mode": "immediate", "debounceSeconds": 0 }
+}

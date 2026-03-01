@@ -1,0 +1,18 @@
+{
+  "id": "theme-minimal",
+  "name": "Minimal",
+  "version": "1.0.0",
+  "description": "极简设计 — 干净的无衬线字体，专注内容本身",
+  "longDescription": "以内容为核心的极简主义设计。去除所有装饰元素，只保留最必要的视觉结构。",
+  "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+  "icon": "✨",
+  "category": "theme",
+  "tags": ["sans-serif", "clean", "minimal", "typography"],
+  "verified": true,
+  "formats": { "css": { "entry": "css/index.css" } },
+  "config": { "schema": {
+    "fontFamily": { "type": "select", "label": "字体", "options": [{"value":"system-ui","label":"系统默认"},{"value":"'Inter',sans-serif","label":"Inter"},{"value":"'Noto Sans SC',sans-serif","label":"思源黑体"}], "default": "system-ui", "cssVar": "--theme-font-family" },
+    "lineHeight": { "type": "range", "label": "行高", "default": 1.7, "min": 1.5, "max": 2.2, "step": 0.1, "cssVar": "--theme-line-height" }
+  }},
+  "revalidation": { "mode": "immediate", "debounceSeconds": 0 }
+}

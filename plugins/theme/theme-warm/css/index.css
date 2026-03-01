@@ -1,0 +1,37 @@
+/* Warm Theme */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Noto+Serif+SC:wght@400;500;600&display=swap');
+
+:root {
+  --theme-primary: #e07b5a;
+  --theme-bg: #fff9f5;
+}
+
+body {
+  background: var(--theme-bg);
+  color: #4a3f35;
+  font-family: 'Lora', 'Noto Serif SC', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+h1, h2, h3 { font-family: 'Lora', 'Noto Serif SC', serif; color: #2d2520; letter-spacing: -0.01em; }
+h1 { font-size: 2.2em; font-weight: 600; }
+h2 { font-size: 1.6em; color: var(--theme-primary); border-bottom: 2px solid rgba(224, 123, 90, 0.3); padding-bottom: 0.3em; margin-top: 1.8em; }
+h3 { font-size: 1.25em; color: #6b5a4d; }
+
+a { color: var(--theme-primary); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+a:hover { border-bottom-color: var(--theme-primary); }
+
+blockquote {
+  border-left: 4px solid var(--theme-primary);
+  background: rgba(224, 123, 90, 0.08);
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: #6b5a4d;
+  border-radius: 0 8px 8px 0;
+}
+
+code { background: rgba(224, 123, 90, 0.12); color: #b35a3d; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.88em; }
+pre { background: #3d322a; color: #f5ebe0; padding: 1.5em; border-radius: 10px; overflow-x: auto; }
+pre code { background: none; color: inherit; font-size: 0.9em; }
