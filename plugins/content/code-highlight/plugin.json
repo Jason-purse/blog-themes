@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "icon": "🎨",
   "description": "使用 Highlight.js 为代码块添加语法高亮",
-  "longDescription": "使用 Highlight.js 为代码块添加语法高亮，支持多种配色方案，让代码更具可读性。",
+  "longDescription": "使用 Highlight.js 为代码块添加语法高亮，支持多种配色方案，让代码更具可读性。资源在安装时本地缓存，不依赖外部 CDN。",
   "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
   "category": "content",
   "tags": ["code", "highlight", "syntax"],
@@ -16,6 +16,28 @@
     }
   },
   "slots": ["body"],
+  "cdnDeps": [
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+      "dest": "cdn/highlight.min.js"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css",
+      "dest": "cdn/styles/github.min.css"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css",
+      "dest": "cdn/styles/atom-one-dark.min.css"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css",
+      "dest": "cdn/styles/monokai.min.css"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css",
+      "dest": "cdn/styles/vs2015.min.css"
+    }
+  ],
   "config": {
     "schema": {
       "theme": { "type": "select", "label": "配色方案", "default": "github", "options": [{"value":"github","label":"GitHub"},{"value":"atom-one-dark","label":"Atom Dark"},{"value":"monokai","label":"Monokai"},{"value":"vs2015","label":"VS Code Dark"}] }
