@@ -15,6 +15,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/theme/theme-editorial",
+      "slots": ["body"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": { "css": { "entry": "css/index.css" } }
     },
@@ -30,6 +33,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/theme/theme-minimal",
+      "slots": ["body"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": { "css": { "entry": "css/index.css" } }
     },
@@ -45,6 +51,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/theme/theme-tech",
+      "slots": ["body"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": { "css": { "entry": "css/index.css" } }
     },
@@ -60,6 +69,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/theme/theme-warm",
+      "slots": ["body"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": { "css": { "entry": "css/index.css" } }
     },
@@ -72,6 +84,9 @@
       "version": "1.0.0",
       "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
       "source": "plugins/content/ai-summary",
+      "slots": ["body"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": [] },
       "description": "使用 MiniMax 自动生成文章摘要，展示在文章顶部",
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "comingSoon": true
@@ -88,6 +103,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/content/toc",
+      "slots": ["body"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": ["reading-progress"] },
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-toc" },
@@ -106,6 +124,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/content/code-highlight",
+      "slots": ["body"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-code-highlight" }
@@ -123,6 +144,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/content/reading-time",
+      "slots": ["body"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-reading-time" }
@@ -140,6 +164,9 @@
       "version": "1.1.0",
       "verified": true,
       "source": "plugins/ui/reading-progress",
+      "slots": ["before-content"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "debounced", "debounceSeconds": 120 },
       "formats": {
         "css": { "entry": "css/index.css" },
@@ -158,6 +185,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/ui/back-to-top",
+      "slots": ["body"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-back-to-top" }
@@ -175,6 +205,9 @@
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/ui/dark-mode",
+      "slots": ["body"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-dark-mode" }
@@ -189,6 +222,9 @@
       "version": "1.0.0",
       "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
       "source": "plugins/social/giscus-comments",
+      "slots": ["body"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": [] },
       "description": "基于 GitHub Discussions 的评论系统，零服务器",
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "comingSoon": true
@@ -197,40 +233,58 @@
       "id": "share-buttons",
       "name": "社交分享",
       "category": "social",
+      "icon": "📤",
       "tags": ["share", "twitter", "wechat"],
-      "verified": false,
-      "version": "0.9.0",
-      "author": { "name": "Community", "url": "https://github.com/Jason-purse/blog-plugins" },
+      "verified": true,
+      "version": "1.0.0",
+      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
       "source": "plugins/social/share-buttons",
-      "description": "文章底部添加微博、Twitter、微信分享按钮",
-      "revalidation": { "mode": "debounced", "debounceSeconds": 120 },
-      "comingSoon": true
+      "slots": ["body"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": ["like-button"] },
+      "description": "文章底部添加分享按钮，支持复制链接、Twitter/X、微信等",
+      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
+      "formats": {
+        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-share-buttons" }
+      }
     },
     {
       "id": "like-button",
       "name": "点赞按钮",
       "category": "social",
+      "icon": "❤️",
       "tags": ["like", "reaction", "engagement"],
-      "verified": false,
-      "version": "0.8.0",
-      "author": { "name": "Community", "url": "https://github.com/Jason-purse/blog-plugins" },
+      "verified": true,
+      "version": "1.0.0",
+      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
       "source": "plugins/social/like-button",
-      "description": "文章一键点赞，计数存储于 GitHub Issues",
+      "slots": ["body"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": [] },
+      "description": "文章底部添加点赞按钮，支持 localStorage 存储",
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "comingSoon": true
+      "formats": {
+        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-like-button" }
+      }
     },
     {
       "id": "view-count",
       "name": "阅读量统计",
       "category": "analytics",
+      "icon": "👁️",
       "tags": ["views", "counter", "stats"],
       "verified": true,
       "version": "1.0.0",
       "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
       "source": "plugins/analytics/view-count",
+      "slots": ["body"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": [] },
       "description": "统计并展示每篇文章的阅读量",
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "comingSoon": true
+      "formats": {
+        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-view-count" }
+      }
     },
     {
       "id": "search-analytics",
@@ -241,6 +295,9 @@
       "version": "0.7.0",
       "author": { "name": "Community", "url": "https://github.com/Jason-purse/blog-plugins" },
       "source": "plugins/analytics/search-analytics",
+      "slots": ["body"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "description": "记录访客搜索关键词，帮助了解读者需求",
       "revalidation": { "mode": "debounced", "debounceSeconds": 120 },
       "comingSoon": true
@@ -254,6 +311,9 @@
       "version": "1.0.0",
       "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
       "source": "plugins/seo/structured-data",
+      "slots": ["head"],
+      "allowedRoutes": ["/blog/*"],
+      "dependencies": { "required": [], "recommended": [] },
       "description": "自动注入 JSON-LD 结构化数据，提升搜索引擎收录",
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "comingSoon": true
@@ -267,6 +327,9 @@
       "version": "1.0.0",
       "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
       "source": "plugins/seo/sitemap-gen",
+      "slots": ["body"],
+      "allowedRoutes": ["*"],
+      "dependencies": { "required": [], "recommended": [] },
       "description": "自动生成和更新 sitemap.xml，加速搜索引擎抓取",
       "revalidation": { "mode": "debounced", "debounceSeconds": 300 },
       "comingSoon": true
