@@ -1,23 +1,21 @@
-/* reading-progress: CSS-only 极简版
-   不依赖 JS，纯 CSS scroll-driven animation
-   浏览器支持：Chrome 115+, Firefox 110+
-*/
-@supports (animation-timeline: scroll()) {
-  .blog-reading-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--reading-progress-height, 3px);
-    background: var(--reading-progress-color, var(--accent, #7C8C6E));
-    transform-origin: left;
-    animation: reading-progress-grow linear;
-    animation-timeline: scroll(root block);
-    z-index: 9999;
-  }
+/* reading-progress — 使用 CSS 变量，由 plugin-loader 注入用户配置 */
+:root {
+  --rp-color: #3b82f6;
+  --rp-height: 3px;
+  --rp-z-index: 9999;
+  --rp-position-top: 0;
+  --rp-position-bottom: auto;
 }
 
-@keyframes reading-progress-grow {
-  from { transform: scaleX(0); }
-  to   { transform: scaleX(1); }
+#reading-progress-bar {
+  position: fixed;
+  top: var(--rp-position-top);
+  bottom: var(--rp-position-bottom);
+  left: 0;
+  width: 0%;
+  height: var(--rp-height);
+  background: var(--rp-color);
+  z-index: var(--rp-z-index);
+  transition: width 0.1s ease;
+  border-radius: 0 2px 2px 0;
 }

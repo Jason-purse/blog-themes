@@ -1,13 +1,11 @@
 {
   "id": "reading-progress",
   "name": "阅读进度条",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "plugin",
 
   "formats": {
-    "css": {
-      "entry": "css/index.css"
-    },
+    "css": { "entry": "css/index.css" },
     "webcomponent": {
       "entry": "webcomponent/index.js",
       "element": "blog-reading-progress"
@@ -17,12 +15,40 @@
   "slots": ["before-content"],
 
   "config": {
-    "color":  { "type": "string", "default": "var(--accent)" },
-    "height": { "type": "number", "default": 3 }
-  },
-
-  "checksums": {
-    "css/index.css":         "sha256:f6c9c4e83ddb1f32a3cda31e05390fc649ed13b4a252e09255c9c0814b25313d",
-    "webcomponent/index.js": "sha256:6c9b319da5f8b9f85fb7eb70220e82667e6edf20dc8ed0d60ff38507e079f8df"
+    "schema": {
+      "color": {
+        "type": "color",
+        "default": "#3b82f6",
+        "label": "进度条颜色",
+        "cssVar": "--rp-color"
+      },
+      "height": {
+        "type": "range",
+        "default": 3,
+        "min": 1,
+        "max": 10,
+        "unit": "px",
+        "label": "高度",
+        "cssVar": "--rp-height"
+      },
+      "position": {
+        "type": "select",
+        "default": "top",
+        "options": [
+          { "value": "top",    "label": "顶部" },
+          { "value": "bottom", "label": "底部" }
+        ],
+        "label": "位置",
+        "cssVar": "--rp-position"
+      },
+      "zIndex": {
+        "type": "number",
+        "default": 9999,
+        "min": 1,
+        "max": 99999,
+        "label": "层级 z-index",
+        "cssVar": "--rp-z-index"
+      }
+    }
   }
 }
