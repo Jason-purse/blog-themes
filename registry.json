@@ -48,45 +48,297 @@
   ],
   "plugins": [
     {
-      "id": "reading-progress",
-      "name": "阅读进度条",
+      "id": "ai-summary",
+      "name": "AI 文章摘要",
+      "category": "content",
+      "tags": [
+        "ai",
+        "summary",
+        "auto"
+      ],
       "type": "plugin",
       "verified": true,
       "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 256,
+      "source": "plugins/ai-summary",
+      "description": "使用 MiniMax 自动生成文章摘要，展示在文章顶部",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "toc",
+      "name": "目录导航",
+      "category": "content",
+      "tags": [
+        "toc",
+        "navigation",
+        "sidebar"
+      ],
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 189,
+      "source": "plugins/toc",
+      "description": "自动提取文章标题生成侧边栏目录，支持高亮当前章节",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "code-highlight",
+      "name": "代码高亮增强",
+      "category": "content",
+      "tags": [
+        "code",
+        "highlight",
+        "prism"
+      ],
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 142,
+      "source": "plugins/code-highlight",
+      "description": "基于 Prism.js 的代码块高亮，支持行号和复制按钮",
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 60
+      }
+    },
+    {
+      "id": "reading-time",
+      "name": "阅读时长预估",
+      "category": "content",
+      "tags": [
+        "reading",
+        "time",
+        "ux"
+      ],
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 98,
+      "source": "plugins/reading-time",
+      "description": "自动计算并展示文章预计阅读时间",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "reading-progress",
+      "name": "阅读进度条",
+      "category": "ui",
+      "tags": [
+        "progress",
+        "scroll",
+        "ux"
+      ],
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 312,
       "source": "plugins/reading-progress",
       "description": "页面顶部显示文章阅读进度",
       "revalidation": {
         "mode": "debounced",
-        "debounceSeconds": 120,
-        "description": "CSS 变化，2分钟内可反复调整"
+        "debounceSeconds": 120
       }
     },
     {
-      "id": "ai-summary",
-      "name": "AI 文章摘要",
+      "id": "back-to-top",
+      "name": "回到顶部",
+      "category": "ui",
+      "tags": [
+        "scroll",
+        "button",
+        "ux"
+      ],
       "type": "plugin",
       "verified": true,
       "version": "1.0.0",
-      "source": "plugins/ai-summary",
-      "description": "使用 MiniMax 自动生成文章摘要",
+      "author": "Jason-purse",
+      "downloads": 87,
+      "source": "plugins/back-to-top",
+      "description": "文章页右下角悬浮回到顶部按钮",
       "revalidation": {
-        "mode": "immediate",
-        "debounceSeconds": 0,
-        "description": "内容渲染相关，立即重建"
+        "mode": "debounced",
+        "debounceSeconds": 60
+      }
+    },
+    {
+      "id": "dark-mode",
+      "name": "暗黑模式",
+      "category": "ui",
+      "tags": [
+        "dark",
+        "theme",
+        "toggle"
+      ],
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 201,
+      "source": "plugins/dark-mode",
+      "description": "一键切换暗黑/浅色模式，记忆用户偏好",
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 60
       }
     },
     {
       "id": "giscus-comments",
       "name": "Giscus 评论",
+      "category": "social",
+      "tags": [
+        "comment",
+        "github",
+        "discussion"
+      ],
       "type": "plugin",
       "verified": true,
       "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 178,
       "source": "plugins/giscus-comments",
       "description": "基于 GitHub Discussions 的评论系统",
       "revalidation": {
         "mode": "immediate",
-        "debounceSeconds": 0,
-        "description": "内容渲染相关，立即重建"
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "share-buttons",
+      "name": "社交分享",
+      "category": "social",
+      "tags": [
+        "share",
+        "twitter",
+        "wechat"
+      ],
+      "type": "plugin",
+      "verified": false,
+      "version": "0.9.0",
+      "author": "community",
+      "downloads": 54,
+      "source": "plugins/share-buttons",
+      "description": "文章底部添加微博、Twitter、微信分享按钮",
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 120
+      }
+    },
+    {
+      "id": "like-button",
+      "name": "点赞按钮",
+      "category": "social",
+      "tags": [
+        "like",
+        "reaction",
+        "engagement"
+      ],
+      "type": "plugin",
+      "verified": false,
+      "version": "0.8.0",
+      "author": "community",
+      "downloads": 41,
+      "source": "plugins/like-button",
+      "description": "文章一键点赞，数据存储于 GitHub",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "view-count",
+      "name": "阅读量统计",
+      "category": "analytics",
+      "tags": [
+        "views",
+        "counter",
+        "stats"
+      ],
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 134,
+      "source": "plugins/view-count",
+      "description": "统计并展示每篇文章的阅读量",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "search-analytics",
+      "name": "搜索分析",
+      "category": "analytics",
+      "tags": [
+        "search",
+        "analytics",
+        "insight"
+      ],
+      "type": "plugin",
+      "verified": false,
+      "version": "0.7.0",
+      "author": "community",
+      "downloads": 23,
+      "source": "plugins/search-analytics",
+      "description": "记录访客搜索关键词，帮助了解读者需求",
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 120
+      }
+    },
+    {
+      "id": "structured-data",
+      "name": "结构化数据",
+      "category": "seo",
+      "tags": [
+        "seo",
+        "schema",
+        "json-ld"
+      ],
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 89,
+      "source": "plugins/structured-data",
+      "description": "自动注入 JSON-LD 结构化数据，提升搜索引擎收录",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "sitemap-gen",
+      "name": "Sitemap 生成",
+      "category": "seo",
+      "tags": [
+        "sitemap",
+        "seo",
+        "crawl"
+      ],
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 76,
+      "source": "plugins/sitemap-gen",
+      "description": "自动生成和更新 sitemap.xml",
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 300
       }
     }
   ]
