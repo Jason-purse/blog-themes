@@ -4,6 +4,29 @@
 :root {
   --theme-accent: #8B4513;
   --theme-font-size: 18px;
+  /* --- Blog Plugin CSS Contract (--blog-*) --- */
+  --blog-color-primary:     #8B4513;
+  --blog-color-primary-rgb: 139, 69, 19;
+  --blog-color-accent:      #c8a882;
+  --blog-color-surface:     #faf8f4;
+  --blog-color-text:        #2c2418;
+  --blog-color-text-muted:  #7a6a55;
+  --blog-color-border:      #e0d8cc;
+  --blog-font-body:         'Source Serif 4', Georgia, serif;
+  --blog-font-heading:      'Playfair Display', Georgia, serif;
+  --blog-font-mono:         'JetBrains Mono', monospace;
+  --blog-radius:            8px;
+  --blog-radius-sm:         4px;
+  --blog-spacing:           1.5rem;
+  --blog-shadow:            0 4px 16px rgba(44, 36, 24, 0.08);
+}
+[data-dark="true"] {
+  --blog-color-primary:     #c8a882;
+  --blog-color-accent:      #8B4513;
+  --blog-color-surface:     #1a1208;
+  --blog-color-text:        #e8dcc8;
+  --blog-color-text-muted:  #a89880;
+  --blog-color-border:      #3a2e1e;
 }
 
 body {

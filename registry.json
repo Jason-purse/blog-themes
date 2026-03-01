@@ -89,7 +89,8 @@
       "dependencies": { "required": [], "recommended": [] },
       "description": "使用 MiniMax 自动生成文章摘要，展示在文章顶部",
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "comingSoon": true
+      "comingSoon": true,
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "toc",
@@ -110,7 +111,8 @@
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-toc" },
         "css": { "entry": "css/index.css" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "code-highlight",
@@ -130,7 +132,8 @@
       "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-code-highlight" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "reading-time",
@@ -150,7 +153,8 @@
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-reading-time" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "reading-progress",
@@ -171,7 +175,8 @@
       "formats": {
         "css": { "entry": "css/index.css" },
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-reading-progress" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "back-to-top",
@@ -191,7 +196,8 @@
       "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-back-to-top" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "dark-mode",
@@ -211,7 +217,8 @@
       "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-dark-mode" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "giscus-comments",
@@ -227,7 +234,8 @@
       "dependencies": { "required": [], "recommended": [] },
       "description": "基于 GitHub Discussions 的评论系统，零服务器",
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "comingSoon": true
+      "comingSoon": true,
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "share-buttons",
@@ -246,7 +254,8 @@
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-share-buttons" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "like-button",
@@ -265,7 +274,8 @@
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-like-button" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "view-count",
@@ -284,7 +294,8 @@
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
       "formats": {
         "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-view-count" }
-      }
+      },
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "search-analytics",
@@ -300,7 +311,8 @@
       "dependencies": { "required": [], "recommended": [] },
       "description": "记录访客搜索关键词，帮助了解读者需求",
       "revalidation": { "mode": "debounced", "debounceSeconds": 120 },
-      "comingSoon": true
+      "comingSoon": true,
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "structured-data",
@@ -316,7 +328,8 @@
       "dependencies": { "required": [], "recommended": [] },
       "description": "自动注入 JSON-LD 结构化数据，提升搜索引擎收录",
       "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "comingSoon": true
+      "comingSoon": true,
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
     },
     {
       "id": "sitemap-gen",
@@ -332,7 +345,32 @@
       "dependencies": { "required": [], "recommended": [] },
       "description": "自动生成和更新 sitemap.xml，加速搜索引擎抓取",
       "revalidation": { "mode": "debounced", "debounceSeconds": 300 },
-      "comingSoon": true
+      "comingSoon": true,
+      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+    }
+  ],
+  "bundles": [
+    {
+      "id": "editorial-full",
+      "name": "Editorial 完整体验",
+      "description": "文学气质主题 + 精选插件套装，开箱即得精致博客",
+      "theme": "theme-editorial",
+      "cover": "",
+      "plugins": {
+        "included": ["toc", "reading-progress", "reading-time", "code-highlight"],
+        "recommended": ["dark-mode", "share-buttons", "like-button", "view-count", "back-to-top"]
+      }
+    },
+    {
+      "id": "minimal-full",
+      "name": "Minimal 完整体验",
+      "description": "极简苹果风主题 + 轻量插件套装",
+      "theme": "theme-minimal",
+      "cover": "",
+      "plugins": {
+        "included": ["reading-progress", "code-highlight", "back-to-top"],
+        "recommended": ["share-buttons", "view-count"]
+      }
     }
   ]
 }

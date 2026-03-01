@@ -1,11 +1,72 @@
-:root { --theme-font-family: system-ui; --theme-line-height: 1.7; }
-body { background: #fff; color: #111; font-family: var(--theme-font-family); line-height: var(--theme-line-height); font-size: 16px; }
-h1,h2,h3 { font-weight: 600; color: #000; letter-spacing: -0.02em; }
-h1 { font-size: 2em; }
-h2 { font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 0.4em; }
-h3 { font-size: 1.1em; }
-a { color: #0070f3; }
+/* Minimal Theme - Apple-inspired minimal */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* --- Blog Plugin CSS Contract (--blog-*) --- */
+  --blog-color-primary:     #000000;
+  --blog-color-primary-rgb: 0, 0, 0;
+  --blog-color-accent:      #0071e3;
+  --blog-color-surface:     #ffffff;
+  --blog-color-text:        #1d1d1f;
+  --blog-color-text-muted:  #6e6e73;
+  --blog-color-border:      #d2d2d7;
+  --blog-font-body:         -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --blog-font-heading:      var(--blog-font-body);
+  --blog-font-mono:         'SF Mono', 'Fira Code', monospace;
+  --blog-radius:            12px;
+  --blog-radius-sm:         6px;
+  --blog-spacing:           1.5rem;
+  --blog-shadow:            0 2px 8px rgba(0,0,0,0.08);
+}
+[data-dark="true"] {
+  --blog-color-primary:     #ffffff;
+  --blog-color-accent:      #0071e3;
+  --blog-color-surface:     #000000;
+  --blog-color-text:        #f5f5f7;
+  --blog-color-text-muted:  #a1a1a6;
+  --blog-color-border:      #333336;
+}
+
+/* Base styles */
+body {
+  background: var(--blog-color-surface, #fff);
+  color: var(--blog-color-text, #1d1d1f);
+  font-family: var(--blog-font-body);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: var(--blog-font-heading);
+  font-weight: 600;
+  color: var(--blog-color-text, #000);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.5em; border-bottom: 1px solid var(--blog-color-border, #e5e7eb); padding-bottom: 0.4em; }
+h3 { font-size: 1.15em; }
+
+a { color: var(--blog-color-accent, #0070f3); }
 a:hover { text-decoration: underline; }
-blockquote { border-left: 3px solid #ddd; padding: 0 1em; color: #666; margin: 1.5em 0; }
-code { background: #f5f5f5; padding: 0.1em 0.3em; border-radius: 3px; font-size: 0.875em; }
-pre { background: #f5f5f5; padding: 1.2em; border-radius: 6px; overflow-x: auto; }
+
+blockquote {
+  border-left: 3px solid var(--blog-color-border, #ddd);
+  padding: 0 1em;
+  color: var(--blog-color-text-muted, #666);
+  margin: 1.5em 0;
+}
+
+code {
+  background: var(--blog-color-border, #f5f5f5);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+pre {
+  background: var(--blog-color-border, #f5f5f5);
+  padding: 1.2em;
+  border-radius: var(--blog-radius-sm, 6px);
+  overflow-x: auto;
+}
