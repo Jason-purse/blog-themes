@@ -1,7 +1,9 @@
 {
   "version": "2.0",
   "updatedAt": "2026-03-01",
-  "maintainers": ["Jason-purse"],
+  "maintainers": [
+    "Jason-purse"
+  ],
   "plugins": [
     {
       "id": "theme-editorial",
@@ -10,16 +12,38 @@
       "icon": "📰",
       "description": "文艺出版风 — Playfair Display + 奶油白底色，适合长文阅读",
       "longDescription": "受传统出版物设计启发，采用 Playfair Display 衬线字体与温暖的奶油白底色，营造优雅的阅读氛围。适合文字密集的长文章和文学类内容。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["serif", "warm", "editorial", "typography"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "serif",
+        "warm",
+        "editorial",
+        "typography"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/theme/theme-editorial",
-      "slots": ["body"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": { "css": { "entry": "css/index.css" } }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "css": {
+          "entry": "css/index.css"
+        }
+      }
     },
     {
       "id": "theme-minimal",
@@ -28,16 +52,38 @@
       "icon": "✨",
       "description": "极简设计 — 干净的无衬线字体，专注内容本身",
       "longDescription": "以内容为核心的极简主义设计。去除所有装饰元素，只保留最必要的视觉结构。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["sans-serif", "clean", "minimal", "typography"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "sans-serif",
+        "clean",
+        "minimal",
+        "typography"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/theme/theme-minimal",
-      "slots": ["body"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": { "css": { "entry": "css/index.css" } }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "css": {
+          "entry": "css/index.css"
+        }
+      }
     },
     {
       "id": "theme-tech",
@@ -46,16 +92,38 @@
       "icon": "💻",
       "description": "技术文档风 — 代码优先，清晰的信息层次",
       "longDescription": "为技术博客设计的深色主题，代码优先，清晰的信息层次，适合文档和教程类内容。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["dark", "monospace", "tech", "code"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "dark",
+        "monospace",
+        "tech",
+        "code"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/theme/theme-tech",
-      "slots": ["body"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": { "css": { "entry": "css/index.css" } }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "css": {
+          "entry": "css/index.css"
+        }
+      }
     },
     {
       "id": "theme-warm",
@@ -64,33 +132,77 @@
       "icon": "🌸",
       "description": "温暖日记风 — 柔和的暖色调，适合生活记录",
       "longDescription": "柔和的暖色调主题，营造温馨舒适的阅读氛围。适合生活记录、日记和随笔类内容。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["warm", "cozy", "diary", "typography"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "warm",
+        "cozy",
+        "diary",
+        "typography"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/theme/theme-warm",
-      "slots": ["body"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": { "css": { "entry": "css/index.css" } }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "css": {
+          "entry": "css/index.css"
+        }
+      }
     },
     {
       "id": "ai-summary",
       "name": "AI 文章摘要",
       "category": "content",
-      "tags": ["ai", "summary", "auto"],
+      "tags": [
+        "ai",
+        "summary",
+        "auto"
+      ],
       "verified": true,
       "version": "1.0.0",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
       "source": "plugins/content/ai-summary",
-      "slots": ["body"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": [] },
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
       "description": "使用 MiniMax 自动生成文章摘要，展示在文章顶部",
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
       "comingSoon": true,
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "toc",
@@ -99,20 +211,49 @@
       "icon": "📋",
       "description": "自动生成文章目录，固定在侧边",
       "longDescription": "自动提取文章中的标题标签生成侧边栏目录，支持滚动时高亮当前章节。帮助读者快速导航长文章。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["toc", "navigation", "sidebar"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "toc",
+        "navigation",
+        "sidebar"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/content/toc",
-      "slots": ["body"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": ["reading-progress"] },
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": {
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-toc" },
-        "css": { "entry": "css/index.css" }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": [
+          "reading-progress"
+        ]
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-toc"
+        },
+        "css": {
+          "entry": "css/index.css"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "code-highlight",
@@ -121,19 +262,44 @@
       "icon": "🎨",
       "description": "使用 Highlight.js 为代码块添加语法高亮",
       "longDescription": "使用 Highlight.js 为代码块添加语法高亮，支持多种配色方案，让代码更具可读性。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["code", "highlight", "syntax"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "code",
+        "highlight",
+        "syntax"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/content/code-highlight",
-      "slots": ["body"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
-      "formats": {
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-code-highlight" }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 60
+      },
+      "formats": {
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-code-highlight"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "reading-time",
@@ -142,19 +308,44 @@
       "icon": "⏱️",
       "description": "自动计算并显示预计阅读时间",
       "longDescription": "自动计算并显示预计阅读时间，基于文章字数和你设定的阅读速度。适合展示在文章 meta 信息中。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["reading", "time", "ux"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "reading",
+        "time",
+        "ux"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/content/reading-time",
-      "slots": ["body"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": {
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-reading-time" }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-reading-time"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "reading-progress",
@@ -163,20 +354,47 @@
       "icon": "📊",
       "description": "实时显示文章阅读进度的进度条，固定在页面顶部",
       "longDescription": "实时显示文章阅读进度的进度条，固定在页面顶部。支持自定义颜色、高度和位置。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["progress", "scroll", "ux"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "progress",
+        "scroll",
+        "ux"
+      ],
       "version": "1.1.0",
       "verified": true,
       "source": "plugins/ui/reading-progress",
-      "slots": ["before-content"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "debounced", "debounceSeconds": 120 },
-      "formats": {
-        "css": { "entry": "css/index.css" },
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-reading-progress" }
+      "slots": [
+        "before-content"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 120
+      },
+      "formats": {
+        "css": {
+          "entry": "css/index.css"
+        },
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-reading-progress"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "back-to-top",
@@ -185,19 +403,44 @@
       "icon": "⬆️",
       "description": "平滑滚动回顶部的浮动按钮",
       "longDescription": "当用户向下滚动超过阈值时显示浮动按钮，点击后平滑滚动回页面顶部。支持自定义颜色、大小和触发阈值。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["scroll", "button", "ux"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "scroll",
+        "button",
+        "ux"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/ui/back-to-top",
-      "slots": ["body"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
-      "formats": {
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-back-to-top" }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 60
+      },
+      "formats": {
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-back-to-top"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "dark-mode",
@@ -206,147 +449,388 @@
       "icon": "🌙",
       "description": "为博客添加深色/浅色模式切换按钮",
       "longDescription": "为博客添加深色/浅色模式切换按钮，记忆用户偏好，支持跟随系统设置。",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "tags": ["dark", "theme", "toggle"],
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "tags": [
+        "dark",
+        "theme",
+        "toggle"
+      ],
       "version": "1.0.0",
       "verified": true,
       "source": "plugins/ui/dark-mode",
-      "slots": ["body"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "revalidation": { "mode": "debounced", "debounceSeconds": 60 },
-      "formats": {
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-dark-mode" }
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 60
+      },
+      "formats": {
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-dark-mode"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "giscus-comments",
       "name": "Giscus 评论",
       "category": "social",
-      "tags": ["comment", "github", "discussion"],
+      "tags": [
+        "comment",
+        "github",
+        "discussion"
+      ],
       "verified": true,
       "version": "1.0.0",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
       "source": "plugins/social/giscus-comments",
-      "slots": ["body"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": [] },
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
       "description": "基于 GitHub Discussions 的评论系统，零服务器",
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
       "comingSoon": true,
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "share-buttons",
       "name": "社交分享",
       "category": "social",
       "icon": "📤",
-      "tags": ["share", "twitter", "wechat"],
+      "tags": [
+        "share",
+        "twitter",
+        "wechat"
+      ],
       "verified": true,
       "version": "1.0.0",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "source": "plugins/social/share-buttons",
-      "slots": ["body"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": ["like-button"] },
-      "description": "文章底部添加分享按钮，支持复制链接、Twitter/X、微信等",
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": {
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-share-buttons" }
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "source": "plugins/social/share-buttons",
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": [
+          "like-button"
+        ]
+      },
+      "description": "文章底部添加分享按钮，支持复制链接、Twitter/X、微信等",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-share-buttons"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "like-button",
       "name": "点赞按钮",
       "category": "social",
       "icon": "❤️",
-      "tags": ["like", "reaction", "engagement"],
+      "tags": [
+        "like",
+        "reaction",
+        "engagement"
+      ],
       "verified": true,
       "version": "1.0.0",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "source": "plugins/social/like-button",
-      "slots": ["body"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "description": "文章底部添加点赞按钮，支持 localStorage 存储",
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": {
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-like-button" }
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "source": "plugins/social/like-button",
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "description": "文章底部添加点赞按钮，支持 localStorage 存储",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-like-button"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "view-count",
       "name": "阅读量统计",
       "category": "analytics",
       "icon": "👁️",
-      "tags": ["views", "counter", "stats"],
+      "tags": [
+        "views",
+        "counter",
+        "stats"
+      ],
       "verified": true,
       "version": "1.0.0",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
-      "source": "plugins/analytics/view-count",
-      "slots": ["body"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": [] },
-      "description": "统计并展示每篇文章的阅读量",
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
-      "formats": {
-        "webcomponent": { "entry": "webcomponent/index.js", "element": "blog-view-count" }
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
       },
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "source": "plugins/analytics/view-count",
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "description": "统计并展示每篇文章的阅读量",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
+      "formats": {
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-view-count"
+        }
+      },
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "search-analytics",
       "name": "搜索分析",
       "category": "analytics",
-      "tags": ["search", "analytics", "insight"],
+      "tags": [
+        "search",
+        "analytics",
+        "insight"
+      ],
       "verified": false,
       "version": "0.7.0",
-      "author": { "name": "Community", "url": "https://github.com/Jason-purse/blog-plugins" },
+      "author": {
+        "name": "Community",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
       "source": "plugins/analytics/search-analytics",
-      "slots": ["body"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
       "description": "记录访客搜索关键词，帮助了解读者需求",
-      "revalidation": { "mode": "debounced", "debounceSeconds": 120 },
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 120
+      },
       "comingSoon": true,
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "structured-data",
       "name": "结构化数据",
       "category": "seo",
-      "tags": ["seo", "schema", "json-ld"],
+      "tags": [
+        "seo",
+        "schema",
+        "json-ld"
+      ],
       "verified": true,
       "version": "1.0.0",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
       "source": "plugins/seo/structured-data",
-      "slots": ["head"],
-      "allowedRoutes": ["/blog/*"],
-      "dependencies": { "required": [], "recommended": [] },
+      "slots": [
+        "head"
+      ],
+      "allowedRoutes": [
+        "/blog/*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
       "description": "自动注入 JSON-LD 结构化数据，提升搜索引擎收录",
-      "revalidation": { "mode": "immediate", "debounceSeconds": 0 },
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      },
       "comingSoon": true,
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
     },
     {
       "id": "sitemap-gen",
       "name": "Sitemap 生成",
       "category": "seo",
-      "tags": ["sitemap", "seo", "crawl"],
+      "tags": [
+        "sitemap",
+        "seo",
+        "crawl"
+      ],
       "verified": true,
       "version": "1.0.0",
-      "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
       "source": "plugins/seo/sitemap-gen",
-      "slots": ["body"],
-      "allowedRoutes": ["*"],
-      "dependencies": { "required": [], "recommended": [] },
+      "slots": [
+        "body"
+      ],
+      "allowedRoutes": [
+        "*"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
       "description": "自动生成和更新 sitemap.xml，加速搜索引擎抓取",
-      "revalidation": { "mode": "debounced", "debounceSeconds": 300 },
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 300
+      },
       "comingSoon": true,
-      "themeCompatibility": { "optimizedFor": ["theme-editorial"], "universal": true }
+      "themeCompatibility": {
+        "optimizedFor": [
+          "theme-editorial"
+        ],
+        "universal": true
+      }
+    },
+    {
+      "id": "guestbook",
+      "name": "留言板",
+      "version": "1.0.0",
+      "icon": "💬",
+      "description": "让访客留言互动的独立留言板页面",
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "category": "page",
+      "tags": [
+        "guestbook",
+        "social",
+        "page"
+      ],
+      "verified": true,
+      "source": "plugins/page/guestbook",
+      "formats": {
+        "page": {
+          "route": "/guestbook",
+          "title": "留言板"
+        },
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-guestbook"
+        },
+        "adminPage": {
+          "entry": "admin/index.js",
+          "element": "blog-guestbook-admin",
+          "nav": {
+            "label": "留言管理",
+            "icon": "💬",
+            "section": "content"
+          }
+        }
+      },
+      "allowedRoutes": [
+        "/guestbook"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "revalidation": {
+        "mode": "immediate"
+      },
+      "themeCompatibility": {
+        "universal": true
+      }
     }
   ],
   "bundles": [
@@ -357,8 +841,19 @@
       "theme": "theme-editorial",
       "cover": "",
       "plugins": {
-        "included": ["toc", "reading-progress", "reading-time", "code-highlight"],
-        "recommended": ["dark-mode", "share-buttons", "like-button", "view-count", "back-to-top"]
+        "included": [
+          "toc",
+          "reading-progress",
+          "reading-time",
+          "code-highlight"
+        ],
+        "recommended": [
+          "dark-mode",
+          "share-buttons",
+          "like-button",
+          "view-count",
+          "back-to-top"
+        ]
       }
     },
     {
@@ -368,8 +863,15 @@
       "theme": "theme-minimal",
       "cover": "",
       "plugins": {
-        "included": ["reading-progress", "code-highlight", "back-to-top"],
-        "recommended": ["share-buttons", "view-count"]
+        "included": [
+          "reading-progress",
+          "code-highlight",
+          "back-to-top"
+        ],
+        "recommended": [
+          "share-buttons",
+          "view-count"
+        ]
       }
     }
   ]
